@@ -43,10 +43,9 @@ Use this public JSON URL: https://s3.vclasses.net/dev-alsamerre/quiz
 
   **Example title**: Frontend Task Submission - john.doe@example.com
 
-## 💡 Bonus Points
 
-- Use of Three.js to create a simple 3D effect.
-- Animation or transitions that improve UX.
-- Code quality and readability.
+## ⏱ Deadline
+
+The last Date for this task is 10/04/2025
 
 Good luck!
