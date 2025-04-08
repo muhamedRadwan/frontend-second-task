@@ -33,3 +33,20 @@ Build a **Quiz Page** using **React** that:
 
 Use this public JSON URL: https://s3.vclasses.net/dev-alsamerre/quiz 
 
+## 📬 Submission
+
+- Fork this repository.
+- Complete the task in your forked repository.
+- Push your solution to your fork.
+- Open a Pull Request to this original repository.
+- Include your email in the title of the Pull Request.
+
+  **Example title**: Frontend Task Submission - john.doe@example.com
+
+## 💡 Bonus Points
+
+- Use of Three.js to create a simple 3D effect.
+- Animation or transitions that improve UX.
+- Code quality and readability.
+
+Good luck!
