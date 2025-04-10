@@ -1,54 +1,90 @@
-# React + TypeScript + Vite
+# Quiz Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern quiz application built with React, TypeScript, and Vite. This application allows users to take interactive quizzes with multiple-choice questions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive quiz interface
+- Multiple-choice questions
+- Real-time score tracking
+- Responsive design
+- Fallback questions if API is unavailable
+- Beautiful UI with Tailwind CSS and shadcn-ui
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn-ui
+- Zustand (State Management)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+### Prerequisites
+
+- Node.js & npm installed
+
+### Installation
+
+1. Clone the repository:
+```sh
+git clone <YOUR_GIT_URL>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Navigate to the project directory:
+```sh
+cd <PROJECT_NAME>
 ```
+
+3. Install dependencies:
+```sh
+npm install
+```
+
+4. Start the development server:
+```sh
+npm run dev
+```
+
+## Project Structure
+
+- `src/components/` - Contains reusable UI components
+- `src/pages/` - Contains page components
+- `src/lib/` - Contains store and utility functions
+- `src/hooks/` - Contains custom React hooks
+- `public/` - Contains static assets
+
+## API Integration
+
+The application fetches quiz questions from an external API endpoint:
+```
+https://s3.vclasses.net/dev-alsamerre/quiz
+```
+
+If the API is unavailable, the application uses a set of default questions about Egypt.
+
+## Development
+
+You can edit this project in several ways:
+
+1. **Local Development**
+   - Clone the repository
+   - Make changes using your preferred IDE
+   - Push changes to the repository
+
+2. **GitHub**
+   - Edit files directly on GitHub
+   - Use GitHub Codespaces for online development
+
+## Deployment
+
+To deploy this project:
+1. Build the project:
+```sh
+npm run build
+```
+2. Deploy the contents of the `dist` folder to your preferred hosting service.
+
+
