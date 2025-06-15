@@ -9,7 +9,8 @@ interface ErrorScreenProps {
 
 export default function ErrorScreen({ message, onRetry }: ErrorScreenProps) {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-600">
+    <div     
+    className="flex h-screen items-center justify-center bg-gray-600">
       <div className="rounded-lg bg-white p-8 text-center shadow-lg">
         <p className="mb-4 text-red-600">{message}</p>
         {onRetry && (
