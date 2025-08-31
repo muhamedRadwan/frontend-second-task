@@ -46,6 +46,6 @@ Use this public JSON URL: https://s3.vclasses.net/dev-alsamerre/quiz
 
 ## ⏱ Deadline
 
-The last Date for this task is 10/04/2025
+The last Date for this task is 04/09/2025
 
 Good luck!
